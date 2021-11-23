@@ -11,14 +11,9 @@ def primary(number):
   f.close()
   last = len(quotes) -1
 
-  if number <= 1:
+  for n in range(number):
     rnd = random.randint(0,last)
     print(quotes[rnd], end="")
-
-  if number > 1:
-    for n in range(number):
-      rnd = random.randint(0,last)
-      print(quotes[rnd], end="")
 
 if __name__== "__main__":
   primary(number)
