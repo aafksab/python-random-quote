@@ -1,5 +1,6 @@
 import random
 import argparse
+
 parser = argparse.ArgumentParser(description='Number of quotes to return')
 parser.add_argument('--number', dest='number', type=int, help='Number of quotes to return')
 args = parser.parse_args()
